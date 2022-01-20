@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+nav  {
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    align-items: center;
+    position: fixed;
+    /* position: relative; */
+    z-index: 99;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.content-nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 90px;
+}
+#js {
+    display: none;
+}
+.logo {
+    color: black;
+    font-size: 40px;
+}
+.links {
+    display: flex;
+
+}
+.links ul li {
+    margin: 0 20px;
+}
+.links ul li a {
+    font-size: 20px;
+    color: black;
+    font-weight: 100;
+}
+.links button {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+.links button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-color: #2D2640;
+    position: relative;
+}
+.main .images img {
+    position: absolute;
+}
+.main .images .right {
+    right: 0;
+}
+.main .images .intro {
+    right: 210px;
+    top: 80px;
+}
+.main .images .left {
+top: 250px;
+    
+}
+.content-main {
+    color: white;
+    padding-top: 10%;
+    width: 50%;
+}
+.content-main .title-main {
+font-size: 64px;
+letter-spacing: 1.8px;
+}
+.content-main .para-main {
+    font-size: 16px;
+    width: 90%;
+    padding-top: 20px;
+    }
+    .content-main .btn-main {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: transparent;
+        letter-spacing: 2px;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .7s ease;
+        margin-top: 20px;
+        }
+.content-main .btn-main:hover {
+            background-color: black;
+            color: white;     
+         }
+.ligne {
+    width: 15%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+}
+
+
+.srvs {
+    position: relative;
+    width: 100%;
+    margin-top: 10%;
+}
+.ligne2 {
+    width: 15%;
+    height: 1px;
+    background-color: #2D2640;
+    position: absolute;
+    top: 0;
+}
+.title-srvs {
+    font-size: 64px;
+    color: #2D2640;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 8%;
+}
+.cards .one {
+    padding: 20px;
+    transition: .7s ease;
+}
+.cards .one:hover {
+    border: #2D2640 2px solid;
+    border-radius: 26px;
+}
+.cards i {
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.cards h1 {
+    font-size: 30px;
+    color: #2D2640;
+}
+.cards p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+    letter-spacing: 0.3mm;
+}
+
+.find-content {
+    background-color: #2D2640;
+    position: relative;
+    margin-top: 50px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.find-content img {
+position: absolute;
+width: 40%;
+height: 300px;
+right: 0%;
+}
+.find-content h1 {
+color: #fff;
+font-size: 54px;
+width: 60%;
+padding: 50px;
+}
+.find-content .find-btn {
+    border: 2px solid white;
+    padding: 10px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer {
+    margin-top: 40px;
+    background-color: #FAFAFA;
+}
+.footer-nav {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+
+}
+.footer-nav .iconss img  {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.tips {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding-top: 30px;
+}
+.tips a {
+    display: block;
+    color: #333D5E;
+    line-height: 2.1;
+}
+
+@media (max-width : 667px) {
+    nav  {
+        position: relative;
+    }
+    .content-nav {
+        display: block;
+        }
+    .links {
+        display: none;
+    }
+    .links ul  {
+display: block; 
+text-align: center; 
+width: 100%; }
+    #js {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .main .images .intro {
+display: none;
+    }
+    .content-main {
+        width: 100%;
+        text-align: center;
+    }
+    .content-main .title-main {
+        font-size: 54px;
+text-align: center; 
+       }
+       .content-main .para-main {
+        width: 100%;
+        }
+        .cards {
+            display: block;
+        }
+        .find-content {
+            display: block;
+            height: 300px;
+            justify-content: center;
+            text-align: center;
+        }
+        .find-content h1 {
+            font-size: 34px;
+            width: 100%;
+            padding: 20px;
+            }
+        footer {
+                margin-top: 10px;
+        }
+        .footer-nav {
+            padding-top: 50px;
+            display: flex;
+        }
+        .footer-nav .iconss img  {
+            margin: 0 5px;
+        }
+        .tips {
+            display: grid;
+            grid-template-columns: repeat(2 , 2fr);
+text-align: center;        }
+}
